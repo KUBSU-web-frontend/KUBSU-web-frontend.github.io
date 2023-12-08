@@ -75,3 +75,20 @@ body {
   border-bottom: 3px solid transparent;
   transition: border-color 400ms;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-menu {
+  background-color: #F14D34;
+  border-radius: 0 !important;
+
+}
+.dropdown-item{
+  color: white;
+}
+.dropdown-menu a:hover {
+  background-color: #D13018;
+  color: white;
+}
