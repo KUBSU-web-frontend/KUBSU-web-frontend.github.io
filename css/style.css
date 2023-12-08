@@ -13,32 +13,16 @@ body {
   
   body {
     background-color: #E5E5E5;
-    margin: 5px;
   }
   
   header {
     position: fixed;
-    font-family: Arial;
     color: white;
     width: 98%;
-    /* Add this */
     text-align: center;
-    overflow: hidden;
     height: 650px;
+    overflow: hidden;
   }
-  
-  header h1 {
-    padding: 2px;
-    font-size: 5.5em;
-    font-weight: bold;
-    letter-spacing: 11px;
-    text-align: center;
-    /* Add this */
-    display: inline-block;
-  }
-  
-  
-  /* Update this */
   
   video {
     position: absolute;
@@ -54,12 +38,27 @@ body {
     filter: blur(3px);
     transform: scale(1.04);
   }
+  video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-image: url(desert.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.3); /* set the transparency to 30% */
+  }
+  
   
   #shapka{
     width: 1180px;
   }
   #b-logo{
     float: left;
+    width: 190px;
+    margin-right: 15px;
   }
   nav a{
     text-decoration: none;
@@ -70,20 +69,26 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
+  line-height: 22px;
   text-transform: uppercase;
   color: #fff;
-  border-bottom: 3px solid transparent;
-  transition: border-color 400ms;
+  height: 22px;
+
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
+  
 }
 .dropdown-menu {
+  top: 21px;
+  left: -1px; 
   background-color: #F14D34;
   border-radius: 0 !important;
-
+}
+#dm2{
+  width: 100px;
 }
 .dropdown-item{
   color: white;
@@ -91,4 +96,20 @@ body {
 .dropdown-menu a:hover {
   background-color: #D13018;
   color: white;
+  
+}
+
+#navbar .ul-li{
+  
+  margin-right: 30px;
+  
+}
+.b-container{
+  margin-top: 30px;
+}
+a:hover{color:white;}
+#navbar li.ul-li:hover{
+  
+  
+  border-bottom:#F14D34 solid 3px;
 }
