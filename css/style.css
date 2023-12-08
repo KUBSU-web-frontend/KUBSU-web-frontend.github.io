@@ -37,6 +37,8 @@ body {
     object-fit: cover;
     filter: blur(3px);
     transform: scale(1.04);
+    filter: brightness(25%);
+
   }
   video::before {
     content: "";
@@ -112,4 +114,21 @@ a:hover{color:white;}
   
   
   border-bottom:#F14D34 solid 3px;
+}
+#container{
+  padding: 130px 0 60px;
+}
+#container h1{
+  font-family: Montserrat;
+font-size: 52px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#h1-text{
+  height: 120px;
+width: 506px;
+
 }
