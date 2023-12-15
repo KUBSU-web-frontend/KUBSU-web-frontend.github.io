@@ -1101,7 +1101,7 @@ line-height: 60px;
 
 .contacts-desk {
   padding-top: 117px;
-  padding-left:130px;
+  padding-left:20px;
 }
 
 .contacts-desk span {
@@ -1131,7 +1131,7 @@ line-height: 60px;
 }
 
 .phone, .mail{
-  padding-left:130px;
+  padding-left:20px;
   display:flex;
 }
 #phone {
@@ -1282,6 +1282,13 @@ hr {
     .D img {
       width:467px;
       height:213px;
+    }
+
+    .contacts-desk {
+      padding-left:130px;
+    }
+    .phone, .mail{
+      padding-left:130px;
     }
 
     .contacts-desk p{
