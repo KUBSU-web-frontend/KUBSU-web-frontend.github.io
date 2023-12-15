@@ -49,19 +49,16 @@ body {
     filter: brightness(25%);
 
   }
-  video::before {
-    content: "";
+  .video-container {
+    position: relative;
+  }
+  
+  .video-container img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10000;
-    background-image: url(desert.jpg);
-    background-size: cover;
-    background-color: rgba(255, 255, 255, 0.3); /* set the transparency to 30% */
   }
-  
+
   
   #navigationbar{
     width:100%;
