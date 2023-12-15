@@ -418,9 +418,7 @@ line-height: 22px;
   float: left;
 }
 
-  #c-container{
-    max-width: 1180px;
-  }
+
 
 
 /* block3 */
@@ -468,9 +466,7 @@ opacity: 0.5;
 margin-bottom: 20px;
 }
 
-#s-container{
-  max-width: 1180px;
-}
+
 .s-blocks{
   border-radius: 5px;
   box-shadow: 20px 20px 40px rgb(5 12 51 / 5%);
@@ -872,7 +868,11 @@ color: #050C33;
 
 }
 /* responsive shapka, navbar to bottom start */
-
+/* cringe2*/
+#c-container, #s-container,#e-container,#t-container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media (min-width: 375px) {
   header #container {
     
@@ -960,8 +960,11 @@ line-height: 60px;
     margin:0;
     margin-top: 55px;
   }
+  
   #c-container, #s-container,#e-container,#t-container{
     max-width: 750px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
  }
 
@@ -1592,7 +1595,6 @@ hr {
 
   .sp {
     max-width:480px;
-    text-align: unset;
   }
   .d-flying{
     z-index: 1;
