@@ -1592,6 +1592,7 @@ hr {
 
   .sp {
     max-width:480px;
+    text-align: unset;
   }
   .d-flying{
     z-index: 1;
