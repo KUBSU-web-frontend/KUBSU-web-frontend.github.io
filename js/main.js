@@ -81,3 +81,39 @@ $(document).ready(function () {
         }],
     });
   });
+
+  /* Отправка формы */
+
+  let names = document.getElementById("InputName");
+  let phone = document.getElementById("InputPhone");
+  let email = document.getElementById("InputEmail");
+  let msg = document.getElementById("Textarea");
+  let cb = document.getElementById("Check");
+
+  $(function () {
+    $(".ajaxForm").submit(function (e) {
+      e.preventDefault();
+      var href = $(this).attr("action");
+      $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: href,
+        data: $(this).serialize(),
+        success: function (response) {
+          if (response.status === "success" && (cb.checked == true)) {
+            alert("Успешно!");
+            names.value = localStorage.getItem("Имя");
+            phone
+            email.value = localStorage.getItem("Почта");
+            msg.value = localStorage.getItem("Сообщение");
+            cb.checked = false;
+          } else {
+            alert("Ошибка! " + response.message);
+          }
+        }
+      });
+    });
+  });
+
+
+
