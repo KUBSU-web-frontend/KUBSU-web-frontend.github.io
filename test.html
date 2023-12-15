@@ -21,60 +21,78 @@
   <link rel="stylesheet" href="css/style1.css">
 </head>
 <style>
-  .navbar{
-    position: fixed;
-    bottom: 0;
-  }
+body{
+  background-color: gray;
+}
+
+#logobtnwrap{
+  position: fixed;
+  bottom: 0;
+  padding-top: 10px;
+  background-color: black;
+  z-index: 1000;
+}
+#navbarNavDarkDropup{
+
+}
+
 </style>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="container-fluid">
+    <nav class="navbar fixed-bottom navbar-dark bg-dark dropup">
+      <div class="container-fluid" id="logobtnwrap">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropup" aria-controls="navbarNavDarkDropup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown dropup">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+    </div>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropup">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <li class="dropdown">
+            <a class="nav-link dropdown-toggle navbar-expand-lg" href="#" data-toggle="dropdown" aria-expanded="true" >
+              Администрирование
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Поддержка Drupal</a></li>
-              <li><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown1" aria-expanded="false">
-                Администрирование
-              </a>
-              <ul class="dropdown1-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li><a class="dropdown-item" href="#">Продвижение</a></li>
-            <li><a class="dropdown-item" href="#">Реклама</a></li>
-            <li><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown2" aria-expanded="false">
+            <ul class="1dropdown-menu">
+              <li><a class="nav-link" href="#">Action</a></li>
+              <li><a class="nav-link" href="#">Another action</a></li>
+              <li><a class="nav-link" href="#">Something else here</a></li>
+              <li><a class="nav-link" href="#">Something else here</a></li>
+              <li><a class="nav-link" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          </li>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Продвижение</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Реклама</a>
+          </li>
+          <li class="nav-item">
+            <li class="dropdown">
+            <a class="nav-link dropdown-toggle navbar-expand-lg" href="#" data-toggle="dropdown" aria-expanded="true" >
               О нас
             </a>
-              <ul id="dm2" class="dropdown2-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else </a></li>
-                <li><a class="dropdown-item" href="#">Something else </a></li>
-                <li><a class="dropdown-item" href="#">Something else</a></li>
-              </ul>
-            </li>
-            <li><a class="dropdown-item" href="#">Проекты</a></li>
-            <li><a class="dropdown-item" href="#">Контакты</a></li>
-          </li>
+            <ul class="12dropdown-menu">
+              <li><a class="nav-link" href="#">Action</a></li>
+              <li><a class="nav-link" href="#">Another action</a></li>
+              <li><a class="nav-link" href="#">Something else here</a></li>
+              <li><a class="nav-link" href="#">Something else here</a></li>
+              <li><a class="nav-link" href="#">Something else here</a></li>
             </ul>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Проекты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
   
   
   
