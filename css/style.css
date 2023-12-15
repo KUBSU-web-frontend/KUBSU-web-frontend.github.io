@@ -451,17 +451,12 @@ margin-bottom: 12px;
 #s-botside{
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 22px;
-  /* or 138% */
+
+  font-weight: 500;
+  color: #4e5a73;
+  line-height: 1.37;
   
-  
-  /* main-black */
-  
-  color: #050C33;
-  
-  opacity: 0.7;
 }
 .s-numb{
   font-family: 'Montserrat';
@@ -481,11 +476,15 @@ margin-bottom: 20px;
 .s-blocks{
   border-radius: 5px;
   box-shadow: 20px 20px 40px rgb(5 12 51 / 5%);
-  height: 292px;
+
  
 }
+.s-blocks{
+height: 292px;
+}
 .s-blocks-wrapper{
-  padding-left: 25px;
+  padding-left: 30px;
+  padding-right: 35px;
 }
 #botimg{
   position: relative;
@@ -495,6 +494,110 @@ margin-bottom: 20px;
   right: 0;
   bottom: 0;
 }
+#s-h2-text{
+  margin-bottom: 55px;
+}
+.s-block{
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.support{
+  margin-bottom: -232px;
+}
+.s-blocks{
+  background-color: white;
+}
+#wrpers{
+  position: relative;
+  z-index: 2100;
+}
+/* block4 */
+.e-container{
+  max-width: 1180px;
+}
+#e-bg-icon{
+  
+}
+#druplicon2{
+  position: absolute;
+  top: 187px;
+  left: 480px;
+}
+#e-laptop-icon {
+  width: 50vw;
+
+  float: left;
+  position: relative;
+}
+
+#laptop {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.expertise{
+  position: relative;
+  height: 1039px;
+  background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
+}
+
+#e-h2-text h2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  
+  /* White */
+  
+  color: #FFFFFF;
+}
+.e-content{
+  padding-top: 405px;
+  
+}
+.e-blocks{
+  border-left:#F14D34 solid 3px;
+  height: 100px;
+}
+#e-topside{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* or 138% */
+
+
+/* White */
+
+color: #FFFFFF;
+
+opacity: 0.7;
+}
+#e-h2-text{
+  
+
+}
+.expertise a {
+  color: #f14d34;
+}
+.e-block{
+  margin-bottom: 30px;
+}
+.e-blocks-wrapper{
+  padding-left: 20px;
+  padding-right: 35px;
+  padding-top: 10px;
+}
+#e-bl-wrap{
+  margin-top: 66px;
+}
+
 /* responsive shapka, navbar to bottom start */
 
 @media (min-width: 375px) {
