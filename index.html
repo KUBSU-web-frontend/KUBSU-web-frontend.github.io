@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -157,8 +158,83 @@
       </div>
     </header>
 
-    <div class="main">
+    <div class="content">
       Какой-то контент
+      <div class="reviews">
+        <div class="reviews-title">
+          <span>
+            Отзывы
+          </span>
+        </div>
+        <div class="reviews-wrapper">
+            <div class="reviews__slider">
+              
+            </div>
+        </div>
+      </div>
+      <div class="partners">
+        <div class="partners-title">
+            <span>С нами работают</span>
+        </div>
+        <p class="partners-descr">
+            Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё,
+            чтобы наше сотрудничество было долгим.
+        </p>
+
+        <div class="partners__slider-1">
+            <div class="slider__item">
+                <img id="atom" src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+        </div>
+        <div class="partners__slider-2">
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="img/company.png" alt="">
+            </div>
+        </div>
+    </div>
+
     </div>
 
     <footer class = "footer">
@@ -168,7 +244,9 @@
         </div>
         <div class="contacts">
           <div class="contacts-desk">
-            <span>Оставить заявку на поддержку сайта</span>
+            <div class="sp">
+              <span>Оставить заявку на поддержку сайта</span>
+            </div>
             <p>Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий
               подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с
               вами свяжется!</p>
@@ -221,6 +299,10 @@
       </div>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

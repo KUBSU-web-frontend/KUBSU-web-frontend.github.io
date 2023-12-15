@@ -265,6 +265,132 @@ header #container{
 #block-1,#block-2,#block-3{
   margin-bottom: 70px;
 }
+/* responsive shapka, navbar to bottom start */
+@media (max-width: 1050px) {
+  header{
+    height: 110vh;
+    
+  }
+  video{
+    height: 110vh;
+  }
+  #leftside{
+    float: none;
+  }
+  #statistic{
+    margin-top: 200px;
+    float: none;
+    width: 750px;
+  }
+  header #container {
+    max-width: 720px;
+}
+
+  }
+  @media (max-width: 790px) {
+    header{
+      height: 110vh;
+      
+    }
+    video{
+      height: 110vh;
+    }
+    #leftside{
+      float: none;
+    }
+    #statistic{
+      margin-top: 200px;
+      float: none;
+      width: 500px;
+    }
+    header #container {
+      max-width: 500px;
+  }
+  #navigationbar {
+    position: fixed;
+    bottom: 0;
+  }
+  }
+
+
+.content {
+  background-color: white;
+}
+
+/*reviews styles start */
+
+.reviews {
+  padding-bottom: 160px;
+}
+
+.reviews-title {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  color: #050C33;
+  margin: 160px auto 10px;
+}
+
+/*reviews styles end */
+
+/* partners styles start */
+ 
+.partners {
+  overflow: hidden;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 160px;
+}
+
+.partners-title {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  color: #050C33;
+  margin: 160px auto 10px;
+}
+
+.partners-descr {
+  width: 740px;
+  margin: 0 auto;
+  padding-bottom: 42px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #050C33;
+  opacity: 0.7;
+}
+
+.partners .slick-track {
+  display: flex;
+}
+
+.partners .partners__slider-1 {
+  margin: 10px 0px;
+}
+.partners .partners__slider-2 {
+  margin: 10px 0px;
+}
+
+.partners .slider__item {
+  height: 155px;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+
+.partners img {
+  width:195px;
+  height:100%;
+  display:block;
+  margin: 0 auto;  
+}
+
+/* partners styles end */
+
 /*footer styles start*/
 .footer{
   background-color: #040613;
@@ -304,10 +430,12 @@ header #container{
   font-weight: 700;
   font-size: 42px;
   line-height: 51px;
-  width: 480px;
   margin-bottom: 20px;
 }
 
+.sp  {
+  width: 480px;
+}
 .contacts-desk p{
   font-family: 'Montserrat';
   font-style: normal;
@@ -315,7 +443,8 @@ header #container{
   font-size: 14px;
   line-height: 22px;
   opacity: 0.7;
-  margin-bottom: 140px
+  margin-bottom: 140px;
+  width: 480px;
 }
 
 .phone, .mail{
