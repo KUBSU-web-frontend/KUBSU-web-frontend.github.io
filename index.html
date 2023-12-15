@@ -25,7 +25,7 @@
 <body>
 
   <body>
-    <header class="container-fluid g-0">
+    <header class="container-fluid g-0" id="h-container-fluid">
 
       <div class="video-container">
         <video autoplay muted loop src="img/video.mp4">
@@ -39,14 +39,14 @@
             <a class="logotip" href="/"><img src="logo.png" alt="Главная" width="40" height="55"> </a>
           </div>
           <div id="navbar">
-            <nav class="col b-nav col-12 my-2 mx-auto pb-3 py-3 text-md-center">
+            <nav class="col b-nav col-12 my-2 mx-auto pb-3 py-3 text-md-center" id="pc-nav">
               <ul>
                 <li class="ul-li d-inline-block "><a href="">Поддержка Drupal</a></li>
                 <li class="ul-li dropdown d-inline-block ">
                   <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                     Администрирование
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" id="dropdwnmenu1">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -54,8 +54,15 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-                <li class="ul-li d-inline-block"><a href="">Продвижение</a></li>
-                <li class="ul-li d-inline-block"><a href="">Реклама</a></li>
+                <li class="ul-li dropdown d-inline-block">
+                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                    Продвижение
+                  </a>
+                  <ul id="dm3" class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Реклама</a></li>
+                  </ul>
+                </li>
+                
                 <li class="ul-li dropdown d-inline-block">
                   <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                     О нас
@@ -76,10 +83,79 @@
         </div>
         </div>
         
+        <div class="container-fluid" id="m-nav">
+          <nav class="navbar fixed-bottom navbar-dark bg-dark dropup" id="mob-nav">
+            <div class="container-fluid" id="logobtnwrap">
+              <a class="logotipnav" href="/"><img src="img/svg/drupalcoder.svg" alt="Главная" width="146" height="20"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropup" aria-controls="navbarNavDarkDropup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropup">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item" id="items">
+                  <a class="nav-link" id="items" href="#">Поддержка Drupal</a>
+                </li>
+                <li class="nav-item" id="items">
+                  
+                  <a class="nav-link dropdown-toggle" id="items" href="#" data-toggle="dropdown" aria-expanded="true" >
+                    Администрирование
+                  </a>
+                  <div class="dropwrapper">
+                  <ul class="dropdown-menu1">
+                    
+                    <li><a class="nav-link" id="items" href="#">Action</a></li>
+                    <li><a class="nav-link" id="items" href="#">Another action</a></li>
+                    <li><a class="nav-link" id="items" href="#">Something else here</a></li>
+                    <li><a class="nav-link" id="items" href="#">Something else here</a></li>
+                    <li><a class="nav-link" id="item-l" href="#">Something else here</a></li>
+                  
+                  </ul>
+                </div>
+                </li>
+              </li>
+              <li class="nav-item" id="items">
+                  
+                <a class="nav-link dropdown-toggle" id="items" href="#" data-toggle="dropdown" aria-expanded="true" >
+                  Продвижение
+                </a>
+                <div class="dropwrapper">
+                <ul class="dropdown-menu1">
+                  
+                  <li><a class="nav-link" id="item-l" href="#">Реклама</a></li>
+                
+                </ul>
+              </div>
+              </li>
+                  <li class="nav-item" id="items">
+                  <a class="nav-link dropdown-toggle" id="items" href="#" data-toggle="dropdown" aria-expanded="true" >
+                    О нас
+                  </a>
+                  <div class="dropwrapper">
+                  <ul class="12dropdown-menu">
+                    <li><a class="nav-link" id="items" href="#">Action</a></li>
+                    <li><a class="nav-link" id="items" href="#">Another action</a></li>
+                    <li><a class="nav-link" id="items" href="#">Something else here</a></li>
+                    <li><a class="nav-link" id="items" href="#">Something else here</a></li>
+                    <li><a class="nav-link" id="item-l"  href="#">Something else here</a></li>
+                  </ul>
+                </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="items" href="#">Проекты</a>
+                </li>
+                <li class="nav-item" id="nav-li-last">
+                  <a class="nav-link" id="item-last" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
         <div class="mx-auto" id="container">
-          <div class="col-md-6" id="leftside">
+          <div class="col-md-5" id="leftside">
           <div id="h1-text">
-            <h1>Поддержка сайтов на Drupal</h1>
+            <h1>Поддержка <br> сайтов на Drupal</h1>
         </div>
         <div id="h2-text">
           <h2>Сопровождение и поддержка сайтов
@@ -89,8 +165,8 @@
           <a href="">Тарифы</a>
         </div>
       </div>
-        <div class="col-md-6" id="statistic">
-          
+        <div class="col-md-7" id="statistic">
+          <div id="threeblocks1">
           <div class="col-md-4 h-blocks" id="block-1">
             <div class="brdr"></div>
             <div class="blocks-wrapper">
@@ -122,7 +198,8 @@
       <div class="col-md-12" id="botside">лет опыта в сфере Drupal</div>  
       </div>
     </div>
-
+  </div>
+  <div id="threeblocks2">
     <div class="col-md-4 h-blocks" id="block-4">
       <div class="brdr"></div>
       <div class="blocks-wrapper">
@@ -152,8 +229,8 @@
   на поддержке</div>  
 </div>
 </div>
-    
-        </div>
+    </div>
+
       </div>
       </div>
     </header>
