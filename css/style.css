@@ -271,11 +271,30 @@ header #container{
   background-color: white;
 }
 
+/*reviews styles start */
+
+.reviews {
+  padding-bottom: 160px;
+}
+
+.reviews-title {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  text-align: center;
+  color: #050C33;
+  margin: 160px auto 10px;
+}
+
+/*reviews styles end */
+
 /* partners styles start */
  
 .partners {
   overflow: hidden;
   padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 160px;
 }
 
 .partners-title {
