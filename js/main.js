@@ -1,5 +1,64 @@
 $(document).ready(function () {
+  $('#t-block-n-2').addClass('t-blocks-selected');
+  $('#t-block-n-2 .ts-btn-prices').addClass('t-btn-prices');
+  $('#t-block-n-2 .ts-btn-prices').removeClass('ts-btn-prices');
+    $('#t-block-n-1').mouseover(function(){
+        $(this).addClass('t-blocks-selected');
+        $('#t-block-n-1 .ts-btn-prices').addClass('t-btn-prices');
+        $('#t-block-n-1 .ts-btn-prices').removeClass('ts-btn-prices');
 
+
+        $('#t-block-n-2').removeClass('t-blocks-selected');
+        $('#t-block-n-2 .t-btn-prices').addClass('ts-btn-prices');
+        $('#t-block-n-2 .t-btn-prices').removeClass('t-btn-prices');
+    });
+    $('#t-block-n-1').mouseout(function(){
+      $(this).removeClass('t-blocks-selected');
+      $('#t-block-n-1 .t-btn-prices').addClass('ts-btn-prices');
+      $('#t-block-n-1 .t-btn-prices').removeClass('t-btn-prices');
+
+      $('#t-block-n-2').addClass('t-blocks-selected');
+      $('#t-block-n-2 .ts-btn-prices').addClass('t-btn-prices');
+      $('#t-block-n-2 .ts-btn-prices').removeClass('ts-btn-prices');
+  });
+  $('#t-block-n-2').mouseover(function(){
+    $(this).addClass('t-blocks-selected');
+    $('#t-block-n-2 .ts-btn-prices').addClass('t-btn-prices');
+    $('#t-block-n-2 .ts-btn-prices').removeClass('ts-btn-prices');
+});
+$('#t-block-n-2').mouseout(function(){
+  $(this).removeClass('t-blocks-selected');
+  $('#t-block-n-2 .t-btn-prices').addClass('ts-btn-prices');
+  $('#t-block-n-2 .t-btn-prices').removeClass('t-btn-prices');
+});
+$('#t-block-n-3').mouseover(function(){
+  $(this).addClass('t-blocks-selected');
+  $('#t-block-n-3 .ts-btn-prices').addClass('t-btn-prices');
+  $('#t-block-n-3 .ts-btn-prices').removeClass('ts-btn-prices');
+
+  $('#t-block-n-2').removeClass('t-blocks-selected');
+  $('#t-block-n-2 .t-btn-prices').addClass('ts-btn-prices');
+  $('#t-block-n-2 .t-btn-prices').removeClass('t-btn-prices');
+});
+$('#t-block-n-3').mouseout(function(){
+$(this).removeClass('t-blocks-selected');
+$('#t-block-n-3 .t-btn-prices').addClass('ts-btn-prices');
+$('#t-block-n-3 .t-btn-prices').removeClass('t-btn-prices');
+
+$('#t-block-n-2').addClass('t-blocks-selected');
+$('#t-block-n-2 .ts-btn-prices').addClass('t-btn-prices');
+$('#t-block-n-2 .ts-btn-prices').removeClass('ts-btn-prices');
+});
+
+$('#Check').change(function () {
+  var button = $('#b');
+  if ($(this).is(':checked')) {
+      button.css('background-color', '#F14D34');
+  } else {
+      button.css('background-color', '');
+  }
+});
+   
     $('.reviews__slider').on(`init reInit`, function (event, slick) {
         $('.slick-slide-num-current').text(1 + ' ');
     })
